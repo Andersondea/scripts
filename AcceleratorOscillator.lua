@@ -1,3 +1,6 @@
+-- Accelerator Oscillator - AC
+-- Developer: Anderson de Assis, 09/05/2022
+
 instrument { name = "Accelerator Oscillator", overlay = false }
 
 fast = input (5, "front.platform.fast period", input.integer, 1, 250)
