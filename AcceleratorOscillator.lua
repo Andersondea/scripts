@@ -1,6 +1,5 @@
 -- Accelerator Oscillator - AC
--- Iq Option
--- Developer: Anderson de Assis, 09/05/2022
+
 
 instrument { name = "Accelerator Oscillator", overlay = false }
 
