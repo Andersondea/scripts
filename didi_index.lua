@@ -1,6 +1,5 @@
 -- Didi Index - Agulhada do Didi
--- Iq Option
--- Developer: Anderson de Assis, 09/05/2022
+
 
 instrument { name = "Didi Index", short_name = "Didi Index", overlay = false }
 
