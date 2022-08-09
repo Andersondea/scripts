@@ -1,0 +1,18 @@
+// Script de indicador para TradingView
+// Author: Anderson de Assis, 2017
+
+study(title="Cuiabá Index (TEMA/SMA)", shorttitle="Cuiabá Index" )
+TemaLength = input(8, minval=4, title="Short TEMA")
+SmaLength1 = input(4, minval=2, title="Middle SMA")
+SmaLength2 = input(8, minval=4, title="Long SMA")
+xPrice = close
+xEMA1 = ema(xPrice, TemaLength)
+xEMA2 = ema(xEMA1, TemaLength)
+xEMA3 = ema(xEMA2, TemaLength)
+nRes = 3 * xEMA1 - 3 * xEMA2 + xEMA3
+AndIdxCurta = nRes - ema(close, SmaLength1)
+AndIdxMidle = 0
+AndIdxLonga = ema(close, SmaLength2) - ema(close, SmaLength1)
+plot(AndIdxCurta, color=#009900)
+plot(0)
+plot(AndIdxLonga, color=#ff0000)
